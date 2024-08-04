@@ -32,16 +32,3 @@ quotes();
 nextquote.addEventListener("click", () => {
   quotes();
 });
-
-const quotes2 = () => {
-  const fetchedQuotes = fetch("https://zenquotes.io/api/quotes")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-
-      document.querySelector(".q").innerHTML = `"${data.map(
-        (data) => data.h + "\n"
-      )}"`;
-    });
-};
-quotes2();
