@@ -1,0 +1,23 @@
+@media (min-width: 912px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .hero {
+    font-size: 18px;
+  }
+}

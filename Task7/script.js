@@ -42,27 +42,8 @@ const quotes2 = () => {
       console.log(data);
 
       document.querySelector(".q").innerHTML = `"${data.map(
-        (data) => data.h + "\n"
+        (data, index) => index + 1 + ")" + data.h + "\n\n"
       )}"`;
     });
 };
 quotes2();
-
-// const fetchedQuotes2 = fetch("https://zenquotes.io/api/quotes/")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     console.log(data);
-
-//     document.querySelector(".quote-list").innerHTML = `-${data.map(
-//       (data) => data.h
-//     )}`;
-//   });
-
-const names = document.getElementById("names");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const country = document.getElementById("country");
-
-if (names.value.trim() == " ") {
-  document.querySelector(" ");
-}

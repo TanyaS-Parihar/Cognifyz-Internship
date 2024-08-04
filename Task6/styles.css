@@ -53,27 +53,18 @@ form button:hover {
   background: #ffffffda;
 }
 
-.button {
-  height: 3rem;
-  width: 20rem;
-  margin-top: -2rem;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 20px;
-  background-color: rgba(243, 159, 2, 0.901);
-  color: black;
+.subscribe {
+  text-align: center;
 }
-.navbar-nav .nav-link:hover {
-  color: #ff5722; /* Change to your desired color */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Optional: Add background color on hover */
-  transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+.form {
+  width: 70%;
+
+  margin: 9rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
 }
-.inspire {
-  background-color: rgba(250, 235, 215, 0.836);
-  color: black;
+.form-start {
+  width: 50%;
+  padding-right: 4rem;
 }
